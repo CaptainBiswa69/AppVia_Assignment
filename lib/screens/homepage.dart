@@ -1,4 +1,6 @@
 import 'package:app_via_assignment/screens/camerascreen.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 
@@ -22,6 +24,7 @@ class _HomePageState extends State<HomePage> {
             const Text(
               "Take a picture and upload it for complete the authentication process",
               textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 20),
             ),
             ElevatedButton(
               onPressed: () async {
